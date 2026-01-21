@@ -11,7 +11,7 @@ embeddings = HuggingFaceEmbeddings(
 
 # Load FAISS
 db = FAISS.load_local(
-    "faiss_index",
+    "faissdb",
     embeddings,
     allow_dangerous_deserialization=True
 )
