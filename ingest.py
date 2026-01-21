@@ -11,6 +11,6 @@ splitdoc=splitter.split_documents(docs)
 
 embedding=HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 vectodb=FAISS.from_documents(splitdoc, embedding)
-vectodb.save_local("faiss_index")
+vectodb.save_local("faissdb")
 
 print("ingestion complete")

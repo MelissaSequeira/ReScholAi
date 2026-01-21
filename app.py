@@ -6,7 +6,7 @@ from langchain.prompts import PromptTemplate
 
 # Embeddings
 embeddings = HuggingFaceEmbeddings(
-    model_name="sentence-transformers/bge-small-en"
+    model_name="BAAI/bge-small-en"
 )
 
 # Load FAISS
